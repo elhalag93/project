@@ -9,6 +9,25 @@
   box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
 }
 
+.pfooter
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+.imgfoot1
+{
+  float: left;
+}
+.imgfoot2
+{
+  float: left;
+}
+.imgfoot3
+{
+  float: left;
+}
+
   
 /* Style the search field */
 #search
