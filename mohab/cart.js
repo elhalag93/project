@@ -67,7 +67,7 @@ var products = {
   
       // Product Name
       part = document.createElement("div");
-      part.innerHTML = products[i]['name'];
+      part.innerHTML = products[i].name;
       part.classList.add("p-name");
       item.appendChild(part);
   
