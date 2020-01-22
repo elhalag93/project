@@ -26,6 +26,18 @@
     padding-top: .5rem;
 }
 
+.line3 {
+  width: 6rem;
+  height: 1px;
+  display: inline-block;
+  background-color: crimson;
+  transition: ease-in-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 .line {
     width: 9rem;
     height: 1px;
