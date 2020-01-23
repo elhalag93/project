@@ -73,7 +73,7 @@ html, body {
     max-width: 1000px;
   }
   #cart-products { width: 70% }
-  #cart-list { width: 30% }
+  #cart-list { width: 40% }
   #cart-products, #cart-list { padding: 20px }
   
  

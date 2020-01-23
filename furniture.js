@@ -88,6 +88,7 @@ var products = {
       part.type = "button";
       part.value = "Add to Cart";
       part.classList.add("p-add");
+      part.onclick = cart.add;
       
       part.dataset.id = i;
       item.appendChild(part);
@@ -95,4 +96,126 @@ var products = {
       container.appendChild(item);
     }
   });
+
+  /* cart */
+
+  var cart = {
+    data : null, 
+
+    save : function(){
+      localStorage.setItem("cart", JSON.stringify(cart.data));
+    },
+    
+    load : function(){
+      cart.data = localStorage.getItem("cart");
+      if (cart.data == null) { cart.data = {}; }
+      else { cart.data = {}; }
+    },
   
+  
+    add : function(){
+      if (cart.data[this.dataset.id] == undefined) {
+        var product = products[this.dataset.id];
+        cart.data[this.dataset.id] = {
+          name : product['name'],
+          desc : product['desc'],
+          img : product['img'],
+          price : product['price'],
+          qty : 1
+        };
+      } else {
+        cart.data[this.dataset.id]['qty']++;
+      }
+      cart.save();
+      cart.list();
+    },
+  
+    list : function(){
+    
+  
+      var container = document.getElementById("cart-list"),
+          item = null, part = null, product = null;
+      container.innerHTML = "";
+  
+      
+      var isempty = function(obj){
+        for (var key in obj) {
+          if(obj.hasOwnProperty(key)) { return false; }
+        }
+        return true;
+      };
+      if (isempty(cart.data)) {
+        item = document.createElement("div");
+        item.innerHTML = "Cart is empty";
+        container.appendChild(item);
+      }
+      else {
+        var total = 0, subtotal = 0;
+        for (var i in cart.data) {
+          item = document.createElement("div");
+          item.classList.add("c-item");
+          product = cart.data[i];
+
+          part = document.createElement("span");
+          part.innerHTML = product['name'];
+          part.classList.add("c-name");
+          item.appendChild(part);
+
+
+          part = document.createElement("input");
+          part.type = "number";
+          part.value = product['qty'];
+          part.dataset.id = i;
+          part.classList.add("c-qty");
+          part.addEventListener("change", cart.change);
+          item.appendChild(part);
+                
+          subtotal = product['qty'] * product['price'];
+          total += subtotal;
+          container.appendChild(item);
+        }
+
+
+        item = document.createElement("input");
+        item.type = "button";
+        item.value = "Empty";
+        item.addEventListener("click",cart.reset);
+        item.classList.add("c-empty");
+        container.appendChild(item);
+        
+        item = document.createElement("input");
+        item.type = "button";
+        item.value = "Checkout - " + "EGP" + total;
+        item.addEventListener("click", cart.checkout);
+        item.classList.add("c-checkout");
+        container.appendChild(item);
+      }
+    },
+
+    reset : function(){ 
+        if (confirm("Empty cart?")) {
+          cart.data = {};
+          cart.save();
+          cart.list();
+        }
+      },
+
+    change : function(){  
+      if (this.value == 0) {
+        delete cart.data[this.dataset.id];
+      } else {
+        cart.data[this.dataset.id]['qty'] = this.value;
+      }
+      cart.save();
+      cart.list();
+    },
+
+    checkout : function(){
+      alert("Done");
+    }
+  };
+  
+  window.addEventListener("load", function(){
+    cart.load();
+    cart.list();
+  });
