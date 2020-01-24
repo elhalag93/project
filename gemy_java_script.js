@@ -22,10 +22,10 @@ var i = 0 ;
 
 
     
-    document.getElementsByTagName('img')[0].src= image1[i] ;
-    document.getElementsByTagName('img')[1].src= image2[i] ;
-    document.getElementsByTagName('img')[2].src= image3[i] ;
-    document.getElementsByTagName('img')[3].src= image4[i] ;
+    document.getElementsByTagName('img')[1].src= image1[i] ;
+    document.getElementsByTagName('img')[2].src= image2[i] ;
+    document.getElementsByTagName('img')[3].src= image3[i] ;
+    document.getElementsByTagName('img')[4].src= image4[i] ;
 
     
     i++ ; 

@@ -7,13 +7,14 @@ body{
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-ul {
+/*ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   position: sticky;
+  top: 0;
 }
 
 li {
@@ -31,7 +32,61 @@ li a {
 li a:hover {
   background-color: rgb(165, 17, 17);
 }
+
+li a:active {
+  background-color: #4CAF50;
+}
+*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+.box button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.box button:hover {
+  background: rgb(165, 17, 17);
+  opacity: 0.7;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*
+.footer {
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+*/
+
+
 html {
   box-sizing: border-box;
 }
@@ -40,26 +95,23 @@ html {
   box-sizing: inherit;
 }
 
-.centerimg{
-  float: center ;
-  border: 0 8px 0 4px solid powderblue ;
-  height: 300 ;
-  padding: 12px ;
-}
-
 .column {
-  width: 33.3%;
   float: left;
-  margin-block : 16px;
+  width: 33.3%;
+  margin-bottom: 16px;
   padding: 0 8px;
-  box-sizing: border-box;
-
 }
-
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
 }
 
 .container {
@@ -72,9 +124,13 @@ html {
   display: table;
 }
 
+.title {
+  color: grey;
+}
 
 .button {
   border: none;
+  outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
@@ -86,17 +142,5 @@ html {
 
 .button:hover {
   background-color: rgb(165, 17, 17);
-}
-
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-.footer {
-  height: 200px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
+  opacity: 0.7;
 }
