@@ -1,13 +1,15 @@
 .header {
     overflow: hidden;
     height: 150px;
-    box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
+    
 }
 .footer {
   overflow: hidden;
   height: 50px;
   box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
 }
+
+
 
 .pfooter
 {
@@ -18,15 +20,36 @@
 .imgfoot1
 {
   float: left;
+  border-style: initial;
+  border-image: url(border.png) 5 round;
+
 }
 .imgfoot2
 {
   float: left;
+  border-style: initial;
+  border-image: url(border.png) 5 round;
+  background-color: lightslategray;
+
 }
 .imgfoot3
 {
   float: left;
+  border-style: initial;
+  border-image: url(border.png) 5 round;
+
 }
+
+.menu-togglr
+{
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 20px;
+  background-color:none;
+}
+
 
   
 /* Style the search field */
@@ -92,7 +115,7 @@ margin-top:-100px ;
   
   /* Add a color to the active/current link */
   .header a.active {
-    background-color: #4CAF50;
+    background-color: rgb(8, 187, 178);
     color: rgb(15, 13, 13);
   }
 
@@ -129,6 +152,16 @@ background-color: none;
     }
 
    
+/*style for centre img*/
+.centerimg
+{
+  margin-top: 10px;
+  margin-left:150;
+  margin-right:80;
+  border: 10px inset rgb(16, 97, 73);
+  border-image: url(border.png) 30 stretch;
+}
+
 
 
 
@@ -136,3 +169,5 @@ background-color: none;
     
 
 
+
+    
