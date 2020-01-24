@@ -110,4 +110,54 @@ html, body {
     width: 100%;
     padding: 10px;
   }
+  .p-add:hover{
+    cursor: pointer;
+    background: #f44242;
+  }
   
+  /* cart */
+  #cart-list div.c-item {
+    background: #cfe1ff;
+  }
+  #cart-list div.c-item:hover {
+    background: #8c9e69;
+  }
+
+  .c-item {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .c-qty, .c-name{
+    display: inline;
+  }
+
+  .c-qty{
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  .c-empty, .c-checkout {
+    border: #f44242;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .c-empty {
+    background: #888;
+
+  }
+  .c-empty:hover {
+    background: #f44242;
+    cursor: pointer;
+
+  }
+
+  .c-checkout:hover {
+    background: #f44242;
+    cursor: pointer;
+  }
+
+
+
+
