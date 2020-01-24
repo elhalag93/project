@@ -72,8 +72,8 @@ html, body {
     display: flex; 
     max-width: 1000px;
   }
-  #cart-products { width: 70% }
-  #cart-list { width: 40% }
+  #cart-products { width: 80% }
+  #cart-list { width: 30% }
   #cart-products, #cart-list { padding: 20px }
   
  
