@@ -1,2 +1,0 @@
-# project
-client_side
