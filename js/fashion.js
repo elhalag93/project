@@ -1,58 +1,105 @@
-
 var products = {
     1 : {
-      name : "Sectional Sofa - 3 Seats",
-      desc : "Navy Blue",
-      img : "source_img/furniture/1.jpg",
-      price : 2650
+      name : "Womens Pajama Set",
+      desc : "Maroon",
+      img : "../source_img/fashion/1.jpg",
+      price : 265
     },
     2 : {
-      name : "Large Regular Bean Bag",
-      desc : "Multicolor - 90x70x60 Cm",
-      img : "source_img/furniture/1 (1).jpg",
+      name : "Amaranth Charleston Pants",
+      desc : "Dark Olive",
+      img : "../source_img/fashion/1 (1).jpg",
       price : 499
     },
     3 : {
-      name : "Man286 Linen Chair",
-      desc : "Offwhite",
-      img : "source_img/furniture/1 (2).jpg",
-      price : 5529
+      name : "Wool Turntle Neck Collarr",
+      desc : "Poncho",
+      img : "../source_img/fashion/1 (2).jpg",
+      price : 529
     },
     4 : {
-      name : "Woody Linen Sofa",
-      desc : " 3m - Turquoise",
-      img : "source_img/furniture/1 (3).jpg",
-      price : 8350
+      name : "Self Pattern Loose",
+      desc : " NavyButtoned",
+      img : "../source_img/fashion/1 (3).jpg",
+      price :350
     },
     5 : {
-        name : "Recliner Lazy Boy Chair",
-        desc : "Brown",
-        img : "source_img/furniture/1 (4).jpg",
-        price : 4590
+        name : "Winter Loose Hoodies",
+        desc : "Faux Fur Coat Jackets",
+        img : "../source_img/fashion/1 (4).jpg",
+        price : 590
       },
     6 : {
-        name : "Corner Bed  ",
-        desc : "260*190 Cm - Teal",
-        img : "source_img/furniture/1 (5).jpg",
+        name : "Long Sleeve Turn Down ",
+        desc : "Collar Fleece",
+        img : "../source_img/fashion/1 (5).jpg",
         price : 688
       },
     7 : {
-        name : "3 Seaters Velvet Sofa Bed",
-        desc : "190x120 Cm - Black",
-        img : "source_img/furniture/1 (6).jpg",
-        price : 3256
+        name : "Plexus Leather Long Cardigan",
+        desc : "Black",
+        img : "../source_img/fashion/1 (6).jpg",
+        price : 256
       },
     8 : {
-        name : "Corner Bed",
-        desc : "260*190 Cm - Brown",
-        img : "source_img/furniture/1 (7).jpg",
-        price : 2722
-      }
+        name : "Merch Cold Shoulder",
+        desc : "Blouse",
+        img : "../source_img/fashion/1 (7).jpg",
+        price : 22
+      },
     
+    9 : {
+        name : "Tight Stitch Formal",
+        desc : "Casual JACKET - Dark Grey",
+        img : "../source_img/fashion/1 (8).jpg",
+        price : 540
+    },
+    10 : {
+        name : "Stylish Casual Sweatpants Bika",
+        desc : "Navy",
+        img : "../source_img/fashion/1 (9).jpg",
+        price : 150
+    },
+    11 : {
+        name : "Slip On Basic Teal Heavey",
+        desc : "Sweatshirt",
+        img : "../source_img/fashion/1 (10).jpg",
+        price : 250
+    },
+    12 : {
+        name : "Hoodied",
+        desc : " Sweatshirt",
+        img : "../source_img/fashion/1 (11).jpg",
+        price :260
+    },
+    13 : {
+          name : "Sweet Shirt",
+          desc : "Melton Olive",
+          img : "../source_img/fashion/1 (12).jpg",
+          price :320
+    },
+    14 : {
+          name : "Boomber Sweet Shirt ",
+          desc : "Melton Olive",
+          img : "../source_img/fashion/1 (13).jpg",
+          price : 314
+    },
+    15 : {
+          name : "Blazer Classic",
+          desc : "Beige - SemiFormal",
+          img : "../source_img/fashion/1 (14).jpg",
+          price : 1714
+    },
+    16 : {
+          name : "Shirt Cotton Basic",
+          desc : "Light Green",
+          img : "../source_img/fashion/1 (15).jpg",
+          price : 320
+    }
   };
   
   
-  window.addEventListener("load", function(){
+   window.addEventListener("load", function(){
     var container = document.getElementById("cart-products"),
         item = null, part = null;
     for (let i in products) {
