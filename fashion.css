@@ -1,0 +1,272 @@
+
+.header {
+    overflow: hidden;
+    height: 150px;
+    box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
+}
+.footer {
+  overflow: hidden;
+  height: 50px;
+  box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
+}
+
+  
+/* Style the search field */
+#search
+{
+float: left;
+padding: 20px;
+margin-left: 750px;
+height: 25px;
+margin-top:-100px ;
+}
+#searbut
+{
+    width: 50px;
+    height: 25px;
+    margin-left: -50px;
+    border: none;
+    color: rgb(247, 240, 240);
+    background-color:rgb(112, 3, 30);
+    
+
+}
+#searinp
+{
+    width: 400px;
+    height: 25px;
+    border: none;
+    color: rgb(14, 6, 6);
+
+}
+  
+  /* Style the links inside the navigation bar */
+.header a {
+    float: left;
+    color: #080202;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top:-10px;
+  }
+  
+  /* Change the color of links on hover */
+  .header a:hover {
+    background-color: #ddd;
+    color: rgb(104, 80, 238);
+  }
+
+
+/*style for category list*/
+  .cat
+  {
+      float: left;
+      color: #080202;
+      text-align: center;
+      font-weight: bold;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      margin-top: -10px;
+  }
+  
+  /* Add a color to the active/current link */
+  .header a.active {
+    background-color: #4CAF50;
+    color: rgb(15, 13, 13);
+  }
+
+  /*style for the cart area*/
+  #lin2
+  { float: right;
+margin-top: -120px;
+margin-left: 400px;
+background-color: none;
+  }
+  #lin1
+  {
+      font-weight: bold;
+      margin-top: 0px;
+      font-size: 20px;
+      color:rgb(112, 3, 30);
+  }
+ 
+ /*the  style of logo of the website */
+
+    #one{
+        font-size: 45px;
+        font-weight: bold;
+        font-family:cursive;
+        margin-left: 200px;
+        color:rgb(112, 3, 30);
+        
+    }
+    #two{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: cursive;
+        color:rgb(112, 3, 30);
+    }
+
+
+
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-wrap {
+    padding-bottom: 1rem;
+    padding-top: 0.25rem;
+}
+
+.align-center {
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.section-title {
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.underline {
+    padding-top: .5rem;
+}
+
+.line {
+    width: 9rem;
+    height: 1px;
+    display: inline-block;
+    background-color: crimson;
+    transition: ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.line2 {
+    width: 11rem;
+    height: 1px;
+    display: inline-block;
+    background-color: crimson;
+    transition: ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.span-b {
+    display: inline-block;
+    margin-inline-start: 2cm;
+
+   
+}
+.img {
+    width: 200;
+    height: 200;
+}
+
+.align-content {
+    align-items: center;
+}
+h2{
+    font-size: 18px;
+    height: 40px;
+    margin-block-end: 0em;
+    color: gray;
+}
+
+h3 {
+    margin-block-start: 0em;
+    color: red;
+}
+ .section-background {
+     background-image: url("download.jpg");
+ }
+
+ .section-background2 {
+    background-image: url("images.jpg");
+}
+.header {
+    overflow: hidden;
+    height: 150px;
+    
+  }
+    
+    /* Style the links inside the navigation bar */
+  .header a {
+      float: left;
+      color: #080202;
+      text-align: center;
+      font-weight: bold;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      margin-top:-10px;
+    }
+    
+    /* Change the color of links on hover */
+    .header a:hover {
+      background-color: #ddd;
+      color: rgb(104, 80, 238);
+    }
+  
+  
+  /*style for category list*/
+    .cat
+    {
+        float: left;
+        color: #080202;
+        text-align: center;
+        font-weight: bold;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-top: -10px;
+    }
+    
+    /* Add a color to the active/current link */
+    .header a.active {
+      background-color: rgb(8, 187, 178);
+      color: rgb(15, 13, 13);
+    }
+  
+    /*style for the cart area*/
+    #lin2
+    { float: right;
+  margin-top: -120px;
+  margin-left: 400px;
+  background-color: none;
+    }
+    #lin1
+    {
+        font-weight: bold;
+        margin-top: 0px;
+        font-size: 20px;
+        color:rgb(112, 3, 30);
+    }
+     /*the  style of logo of the website */
+
+     #one{
+      font-size: 45px;
+      font-weight: bold;
+      font-family:cursive;
+      margin-left: 200px;
+      color:rgb(112, 3, 30);
+      
+  }
+  #two{
+      font-size: 35px;
+      font-weight: bold;
+      font-family: cursive;
+      color:rgb(112, 3, 30);
+  }
