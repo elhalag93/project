@@ -99,7 +99,7 @@ var products = {
   };
   
   
-  window.addEventListener("load", function(){
+   window.addEventListener("load", function(){
     var container = document.getElementById("cart-products"),
         item = null, part = null;
     for (let i in products) {
@@ -135,6 +135,7 @@ var products = {
       part.type = "button";
       part.value = "Add to Cart";
       part.classList.add("p-add");
+      part.onclick = cart.add;
       
       part.dataset.id = i;
       item.appendChild(part);
@@ -142,9 +143,7 @@ var products = {
       container.appendChild(item);
     }
   });
-  
 
-  
   /* cart */
 
   var cart = {
