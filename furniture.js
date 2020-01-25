@@ -15,13 +15,13 @@ var products = {
     3 : {
       name : "Man286 Linen Chair",
       desc : "Offwhite",
-      img : "furniture/1 (2).jpg",
+      img : "source_img/furniture/1 (2).jpg",
       price : 5529
     },
     4 : {
       name : "Woody Linen Sofa",
       desc : " 3m - Turquoise",
-      img : "source_img/source_img/furniture/1 (3).jpg",
+      img : "source_img/furniture/1 (3).jpg",
       price : 8350
     },
     5 : {
