@@ -1,0 +1,151 @@
+.header {
+    overflow: hidden;
+    height: 150px;
+    box-shadow:#4AC4F1 10px 14px 50px 2px ;
+  }
+.footer {
+  overflow: hidden;
+  height: 50px;
+  box-shadow:rgb(201, 243, 134) 10px 14px 50px 2px ;
+}
+
+  
+/* Style the search field */
+#search
+{
+float: left;
+padding: 20px;
+margin-left: 750px;
+height: 25px;
+margin-top:-100px ;
+}
+#searbut
+{
+    width: 50px;
+    height: 25px;
+    margin-left: -50px;
+    border: none;
+    color: rgb(247, 240, 240);
+    background-color:rgb(112, 3, 30);
+    
+
+}
+#searinp
+{
+    width: 400px;
+    height: 25px;
+    border: none;
+    color: rgb(14, 6, 6);
+
+}
+  
+  /* Style the links inside the navigation bar */
+.header a {
+  float: left;
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top:-10px;
+  margin-left: 100px;
+  }
+  
+  /* Change the color of links on hover */
+  .header a:hover {
+    color: rgb(214, 77, 111);
+
+  }
+
+
+/*style for category list*/
+  .cat
+  {
+      float: left;
+      color: #080202;
+      text-align: center;
+      font-weight: bold;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      margin-top: -10px;
+  }
+  
+  /* Add a color to the active/current link */
+  .header a.active {
+    background-color: #4CAF50;
+    color: rgb(15, 13, 13);
+  }
+
+  /*style for the cart area*/
+  #lin2
+  { float: right;
+margin-top: -120px;
+margin-left: 400px;
+background-color: none;
+  }
+  #lin1
+  {
+      font-weight: bold;
+      margin-top: 0px;
+      font-size: 20px;
+      color:rgb(112, 3, 30);
+  }
+ 
+ /*the  style of logo of the website */
+
+ #one{
+  font-size: 45px;
+  font-weight: bold;
+  font-family:cursive;
+  margin-left: 600px;
+  color:rgb(112, 3, 30);
+  color: #ddd;
+  
+}
+#two{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: cursive;
+  color:rgb(214, 77, 111);
+}
+          /*style for helpcontent*/
+
+
+
+
+    .helppara
+    {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
+      color: rgb(237, 245, 241);
+    }
+    .freqask
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        color:rgb(14, 13, 13);
+        font-weight: bold;
+    }
+    body{
+      background: linear-gradient(55deg, #ececec 0%, #e7eff0 51%, #eef8fc 85%);
+    
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+
+/****************************************************************/
+
+.nav{
+  margin-left: 400px;
+}
+
+.cart img:hover{
+  background: #ddd;
+  cursor: pointer;
+}
+
+
+
